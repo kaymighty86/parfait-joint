@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="./css/main_style.css" rel="stylesheet" type="text/css">
+        <link href="./css/product_info_page.css" rel="stylesheet" type="text/css">
+        <link href="./css/cart_view_page.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&family=Lobster&family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,600;1,800&family=Sacramento&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/136d8a3d16.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="./js/main_behaviour.js" type="text/javascript"></script>
+        <script src="./js/purchaser.js" type="text/javascript"></script>
+        <script src="./js/animations.js" type="text/javascript"></script>
+        <title>Parfait Joint</title>
+        <link href="./img/parfait joint tiny icon.png" rel="icon" type="image/x-icon">
+    </head>
+    <body>
+        <header id="landing_section">
+            <div id="top_bar">
+                <a href="./index.html"><img id="website_logo" src="./img/parfait_joint_logo.png" alt="Parfait Joint Logo" width="200px"></a>
+                <nav>
+                    <ul>
+                        <li><a href="#ordering_section">Order Now</a></li>
+                        <li>|</li>
+                        <li><a href="#contact_us_subsection">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="landing_main_view">
+                <div id="introductory_card">
+                    <div id="img_container">
+                        <img src="./img/yogurtparfaits_image_1.jpg" alt="yougurt parfait image">
+                    </div>
+                    <div id="text_container">
+                        <p class="title_text_large">Awesome & Smooth Parfaits!</p>
+                        <p class="descriptive_text_medium italisize lightgray_text">The home of absolutely fresh and soothing parfaits.</p>
+                        <a href="#ordering_section" class="link_button link_button_gradient">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="facts_section">
+                <div id="facts_section_innerwrapper">
+                    <div class="fact_item">
+                        <div class="fact_item_icon"><i class="fa-solid fa-seedling"></i></div>
+                        <p class="fact_item_description">Enjoy it as its enjoyed all over the world!</p>
+                    </div>
+                    <div class="fact_item">
+                        <div class="fact_item_icon"><i class="fa-solid fa-apple-whole"></i></div>
+                        <p class="fact_item_description">With satisfying, sweet and refreshing taste.</p>
+                    </div>
+                    <div class="fact_item">
+                        <div class="fact_item_icon"><i class="fa-solid fa-lemon"></i></div>
+                        <p class="fact_item_description">Delicious desert that goes with most meals.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="ordering_section">
+                <h2 class="title_text_medium official_color_text center_text">Order Now</h2>
+                <p class="descriptive_text_light lightgray_text center_text">Select your refreshing and delicious parfait flavours.</p>
+                <div id="products_list_container">
+                    <div id="products_list"><!--All products go here-->
+                        <!-- <div id="product_1" class="product">
+                            <img class="product_img" src="./img/parfait varieties/parfait type - baileys cookies cream parfaits.jpg" alt="baileys cookies cream parfait image" width="300px">
+                            <div class="product_overlay_dark_gradient"></div>
+                            <div class="product_info_container">
+                                <p class="product_name">Baileys Cookies and Cream</p>
+                                <p class="product_price">$1.99</p>
+                                <button class="product_purchase_btn link_button link_button_gradient"><i class="fa-solid fa-cart-shopping"></i> BUY</button>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="overflow_fadeoff right_fadeoff"></div>
+                    <div class="overflow_fadeoff left_fadeoff"></div>
+                </div>
+            </div>
+
+            <div id="page_end_left_section">
+                <div>
+                    <img id="floating_fruit_1" class="floating_fruit" src="./img/strawberry pic.png" alt="strawberry picture" width="140px">
+                    <img id="floating_fruit_2" class="floating_fruit" src="./img/blueberry pic.png" alt="blueberry picture" width="240px">
+                </div>
+            </div>
+            <div id="page_end_right_section">
+                <div id="contact_us_subsection" class="page_end_right_subsection">
+                    <h2 class="title_text_medium center_text white_text">Contact Us</h2>
+                    <div class="white_text center_text" style="font-size: 12px;">
+                        <i class="fa-solid fa-phone"></i> <p class="descriptive_text_light" style="display: inline-block; padding-bottom: 10px; font-size: 1.3rem;"><b>+00 123 456 7890</b></p>
+                    </div>
+                    <p class="descriptive_text_light white_text center_text">Kindly fill the fields below to reach out to us via email.</p>
+                    <form method="GET">
+                        <label for="full_name" class="descriptive_text_light white_text form_label">Full Name:</label>
+                        <input type="text" name="full_name" id="full_name" class="form_input" required>
+                        
+                        <label for="email" class="descriptive_text_light white_text form_label">Email:</label>
+                        <input type="email" name="email" id="email" class="form_input" required>
+                        
+                        <label for="message" class="descriptive_text_light white_text form_label">Message:</label>
+                        <textarea name="message" id="message" class="form_input" style="height: 200px;" required></textarea>
+                        
+                        <input type="submit" value="Submit" class="link_button link_button_white form_button">
+                    </form>
+                </div>
+
+                <div id="address_subsection" class="page_end_right_subsection">
+                    <h2 class="title_text_medium center_text official_color_text">Address</h2>
+                    <p class="descriptive_text_light lightgray_text center_text">Our homes of tasty parfaits are located at the addresses below!</p>
+                    <div id="addresses_container">
+                        <p class="descriptive_text_light address">
+                            London Store<br>
+                            Roeterseiland Campus Building E<br>
+                            6th floor London<br><br>
+                            <b>Monday to Friday :</b> 9am to 8pm<br>
+                            examplemail.mail.com
+                        </p>
+                        <p class="descriptive_text_light address">
+                            Berlin Store<br>
+                            Roeterseiland Campus Building E<br>
+                            6th floor London<br><br>
+                            <b>Monday to Friday :</b> 9am to 8pm<br>
+                            examplemail.mail.com
+                        </p>
+                    </div>
+                </div>
+
+                <div id="newsletter_subscription_subsection" class="page_end_right_subsection">
+                    <h2 class="title_text_medium center_text official_color_text">Follow Us</h2>
+                    <p class="descriptive_text_light lightgray_text center_text">Follow us via our various social media handles</p>
+                    <div id="social_media_handles">
+                        <a href="#" id="instagram_icon"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" id="facebook_icon"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" id="linkedin_icon"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" id="twitter_icon"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+
+                    <p class="descriptive_text_light lightgray_text center_text" style="margin-top: 60px;">Subscribe to our newsletter</p>
+                    <form method="GET">
+                        <input class="form_input" type="email" name="email" placeholder="Your Email" id="newsletter_subscription_input" required>    
+                        <input type="submit" value="Subscribe" class="link_button link_button_gradient form_button">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer id="footer_section">
+            <ul>
+                <li><a href="#ordering_section">Order Now</a></li>
+                <li>|</li>
+                <li><a href="#contact_us_subsection">Contact</a></li>
+            </ul>
+            <p class="white_text center_text copyright_text">© Copyright 2023 <a class="developer_link" href="../kays-portfolio-website">Simeon Olukayode Adeoye (Kay)</a> - All Rights Reserved</p>
+        </footer>
+
+        <div id="docked_cart_notifier">
+            <p class="descriptive_text_medium">You have 0 items in the cart.</p>
+            <button id="docked_view_cart_btn" class="link_button link_button_gradient"><i class="fa-solid fa-cart-shopping"></i> VIEW CART</button>
+        </div>
+
+        <div id="loading_screen" class="secondary_page"><div class="secondary_window_main_wrapper"><p class="title_text_medium white_text center_text"> Loading...</p></div></div>
+
+        <!-- <div class="cart_change_notifier good_notification">
+            <p class="descriptive_text_light white_text center_text">You have successfully added an item to the cart.</p>
+        </div> -->
+
+        <!-- <embed src="./product_info_page.html" class=""></embed> -->
+        <!--
+        <div id="cart_page">
+            
+        </div>
+
+        <div id="final_feedback_page">
+            
+        </div> -->
+    </body>
+</html>

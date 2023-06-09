@@ -1,0 +1,65 @@
+[
+    {
+        "product_id": "product_1",
+        "product_name": "Blueberry Ice Cream",
+        "product_description": "A parfait with decidedly gourmet flair. Blueberry purée with a layer of seedless raspberry purée, whole berries and whipped cream.",
+        "product_price": 7.99,
+        "product_image": "./img/parfait varieties/parfait type - blueberry ice cream.jpg"
+    },
+    {
+        "product_id": "product_2",
+        "product_name": "Lemon Meringue",
+        "product_description": "Sweet sophistication to classic lemon meringue pie, piled high with fresh raspberries, creamy lemon custard and a lightly browned meringue topping.",
+        "product_price": 5.99,
+        "product_image": "./img/parfait varieties/parfait type - lemon meringue.jpg"
+    },
+    {
+        "product_id": "product_3",
+        "product_name": "Chocolate Chip Cookie Cheesecake",
+        "product_description": "No-bake dessert with a crunchy chocolate chip cookie.",
+        "product_price": 9.99,
+        "product_image": "./img/parfait varieties/parfait type - chocolate chip cookie cheesecake.jpg"
+    },
+    {
+        "product_id": "product_4",
+        "product_name": "Granola and Fruit",
+        "product_description": "This simple treat combines plain Greek yogurt, raspberry sauce, fresh fruit and crunchy granola.",
+        "product_price": 5.99,
+        "product_image": "./img/parfait varieties/parfait type - Granola and Fruit.jpg"
+    },
+    {
+        "product_id": "product_5",
+        "product_name": "Raspberry and Chia Seed Superfood",
+        "product_description": "Start the day right with this healthier breakfast parfait.",
+        "product_price": 7.99,
+        "product_image": "./img/parfait varieties/parfait type - raspberry chia seed superfood.jpg"
+    },
+    {
+        "product_id": "product_6",
+        "product_name": "Mango Mousse",
+        "product_description": "Typical berry parfait but sweetened with fresh mangoes.",
+        "product_price": 6.99,
+        "product_image": "./img/parfait varieties/parfait type - mango-mousse.jpg"
+    },
+    {
+        "product_id": "product_7",
+        "product_name": "Banana Cream Pie",
+        "product_description": "Pudding, whipped cream and crumbled wafers.",
+        "product_price": 6.99,
+        "product_image": "./img/parfait varieties/parfait type - banana cream pie.jpg"
+    },
+    {
+        "product_id": "product_8",
+        "product_name": "Baileys Cookies and Cream",
+        "product_description": "Blissfully indulgent dessert parfait for adults.",
+        "product_price": 11.99,
+        "product_image": "./img/parfait varieties/parfait type - baileys cookies cream parfaits.jpg"
+    },
+    {
+        "product_id": "product_9",
+        "product_name": "Raspberry Mocha Mudslide",
+        "product_description": "A no-bake cheesecake mousse adds creamy depth to this pretty parfait.",
+        "product_price": 8.99,
+        "product_image": "./img/parfait varieties/parfait type - raspberry mocha mudslide.jpg"
+    }
+]

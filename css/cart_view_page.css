@@ -1,0 +1,234 @@
+body{
+    margin: 0px;
+}
+
+#cvp_main_wrapper{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+#cvp_main_container{
+    position: relative;
+    background-color: white;
+    width:70%;
+    height: 700px;
+    max-width: 900px;
+    padding: 50px 30px;
+    padding-top: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* border-radius: 10px; */
+    border-top: 5px solid #f5b7a1;
+    border-bottom: 5px solid #f5b7a1;
+}
+
+.menu_closure_btn{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 6px 15px;
+}
+
+#left_section{
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#right_section{
+    display: inline-block;
+    width: 55%;
+    margin-left: 4%;
+    height: 100%;
+    vertical-align: top;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+/*----------cart item---------*/
+#cart_items_container{
+    width: 100%;
+    height: 66%;
+    /* border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray; */
+    overflow: auto;
+    padding: 20px 7px;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 15px rgba(148, 98, 67,0.3);
+    border-radius: 10px;
+    background-color: rgb(232, 236, 238);
+}
+
+.cart_item{
+    position: relative;
+    /* border: 1px solid #e5cac2; */
+    background-color: #eb9272;
+    /* background-color: #f5b7a1; */
+    /* background-color: #ffff; */
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(151, 86, 45, 0.3);
+    margin-bottom: 15px;
+}
+
+.cart_item>img{
+    border-radius: 6px;
+    border: 1px solid rgb(233, 233, 233);
+}
+
+.cart_item>div{
+    display: inline-block;
+    vertical-align: top;
+    width: 66%;
+    padding: 5px 0px;
+}
+
+.cart_item .item_name, .cart_item .item_cost, .cart_item .item_quantity{
+    padding: 0px;
+    margin: 2px 0px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cart_item>.item_del_btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7px;
+    padding: 6px 15px;
+}
+
+/*----------Costing Section---------*/
+#costing_sub_section{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    margin-top: 35px;
+    border-collapse: collapse;
+}
+
+#costing_sub_section td{
+    padding: 0px 30px;
+}
+
+#costing_sub_section tr:last-child{
+    font-weight: bold;
+    background-color: #f5b7a1;
+}
+
+#costing_sub_section tr:last-child>td{
+    border-top: 2px solid #eb7f57;
+}
+
+/*-----------buyer details form-----------*/
+
+#right_section>form{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#right_section .form_label{
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+#right_section .form_label:first-child{
+    margin-top: 0px;
+}
+
+#right_section .form_input{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    border: 2px dotted rgb(247, 138, 124);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+#right_section .form_input:focus{
+    border: none;
+    outline: 2px solid rgb(228, 103, 87);
+}
+
+#right_section .form_button{
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#payment_option_form_section{
+    width: 70%;
+    margin: 20px auto;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+}
+
+.form_radio_btn{
+    margin: 7px;
+    accent-color: rgb(228, 103, 87);
+}
+
+
+@media screen and (max-width: 1000px) {
+    #cvp_main_container{
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
+    }
+
+    #left_section{
+        display: block;
+        width: 100%;
+        height: 34vh;
+    }
+
+    #right_section{
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin-left: 0px;
+    }
+
+    
+    #right_section .form_label{
+        font-size: 1rem;
+    }
+
+    #right_section .form_input{
+        padding: 12px;
+        font-size: 1.2em;
+    }
+
+    #payment_option_form_section{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 1.2rem;
+    }
+
+    #cart_items_container{
+        padding: 20px 20px;
+    }
+}

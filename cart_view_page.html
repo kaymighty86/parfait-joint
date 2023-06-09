@@ -1,0 +1,70 @@
+<head>
+
+</head>
+<body>
+    <div id="cvp_main_wrapper">
+        <section id="cvp_main_container">
+            <p class="title_text_medium center_text" style="margin: 0px; margin-bottom: 20px;">Checkout</p>
+            <section id="left_section"><!--This will view the items in the cart-->
+                <div id="cart_items_container"><!--cart items are viewed through here-->
+                    <!-- <div class="cart_item">
+                        <img src="./img/parfait varieties/parfait type - chocolate chip cookie cheesecake.jpg" alt="perfait_pic" width="50px">
+                        <div>
+                            <p class="descriptive_text_light item_name italisize"><b>Parfait Name</b></p>
+                            <p class="descriptive_text_light item_cost">$6.99</p>
+                            <p class="descriptive_text_light item_quantity">Qty: 2</p>
+                        </div>
+                        <button class="link_button link_button_white item_del_btn"><i class="fa-solid fa-trash"></i></button>
+                    </div> -->
+                </div>
+                <table  id="costing_sub_section">
+                    <tr>
+                        <td>Items Cost:</td>
+                        <td id="items_total_cost_viewer">$0</td>
+                    </tr>
+                    <tr>
+                        <td>Discount:</td>
+                        <td id="discount_viewer">$0</td>
+                    </tr>
+                    <tr>
+                        <td>Sales Tax:</td>
+                        <td id="sales_tax_viewer">$0</td>
+                    </tr>
+                    <tr>
+                        <td>TOTAL:</td>
+                        <td id="grand_total_viewer">$0</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="right_section">
+                <form method="GET" action="./order_completion_page.html" id="buyer_details_form">
+                    <label for="full_name" class="descriptive_text_light lightgray_text form_label">Full Name:</label>
+                    <input type="text" name="full_name" id="full_name" class="form_input" required>
+                    
+                    <label for="email" class="descriptive_text_light lightgray_text form_label">Email:</label>
+                    <input type="email" name="email" id="email" class="form_input" required>
+                    
+                    <label for="phone" class="descriptive_text_light lightgray_text form_label">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" class="form_input" required>
+
+                    <label for="address" class="descriptive_text_light lightgray_text form_label">Address:</label>
+                    <input type="text" name="address" id="address" class="form_input" required>
+
+                    <label for="message" class="descriptive_text_light lightgray_text form_label">Additional Note (Optional):</label>
+                    <textarea name="message" id="message" class="form_input" style="height: 100px;"></textarea>
+                    
+                    <div id="payment_option_form_section">
+                        <div>
+                            <input type="radio" name="payment_type" value="pay_now" class="form_radio_btn" required>Pay now</input>
+                        </div>
+                        <div>
+                            <input type="radio" name="payment_type" value="pay_on_delivery" class="form_radio_btn" required>Pay on delivery</input>
+                        </div>
+                    </div>
+                    <input type="submit" class="link_button link_button_gradient form_button" value="Complete Order">
+                </form>
+            </section>
+            <button class="link_button link_button_red menu_closure_btn">X</button>
+        </section>
+    </div>
+</body>
